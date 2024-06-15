@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions Practice</title>
+</head>
+<body>
+    <style>
+        .container {
+            background-color: gray;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .box{
+            transition: opacity 1s ease;
+            background-color: aquamarine;
+        }
+
+        .grow-box {
+            flex-grow: 1;
+            flex-basis: 400;
+            background-color: rgb(131, 213, 186);
+        }
+
+        /* if I hover over any part of the div, change the opacity of the whole thing */
+        /* .container:hover {
+            opacity: 0.4;
+        } */
+
+        /* if I am hovering over the div, and also one of the children,
+        change the opacity of the child that also has the hover pseudo-class */
+        /* .container:hover > :hover{
+            opacity: 0.4;
+        } */
+
+        /* if i am hovering anywhere over the div that has container class,
+        change the opacity of any child that does not have the hover pseudo class
+        (so any child that I am not holding my mouse over) */
+        .container:hover > :not(:hover) {
+            opacity: 0.4;
+        }
+
+
+/* This is the split for styling the animation purple boxes */
+        .square {
+            width: 200px;
+            height: 200px;
+            border-radius: 30%;
+            background-color: blueviolet;
+            margin: 50px;
+        }
+
+        /* this will just rotate all the time */
+        /* .one { animation: rotate 3s infinite} */
+
+        /* what i want is for it to only rotate when I hover */
+        .one:hover {animation: rotate 2s;}
+        @keyframes rotate {
+            0% { transform: rotate(0deg);}
+            100% { transform: rotate(360deg);}
+        }
+        
+    </style>
+
+    <div class="container">
+        <div class="box">ONE</div>
+        <div class="box">TWO</div>
+        <div class="box">THREE</div>
+        <div class="box">FOUR</div>
+        <div class="box">FIVE</div>
+        <div class="box">SIX</div>
+        <div class="box">SEVEN</div>
+        <div class="box">EIGHT</div>
+        
+    </div>
+    <br/>
+    <br />
+    <div class="container">
+        <div class="box grow-box">ONE</div>
+        <div class="box grow-box">TWO</div>
+        <div class="box grow-box">THREE</div>
+        <div class="box grow-box">FOUR</div>
+        <div class="box grow-box">FIVE</div>
+        <div class="box grow-box">SIX</div>
+        <div class="box grow-box">SEVEN</div>
+        <div class="box grow-box">EIGHT</div>
+    </div>
+    <br />
+    <br />
+    <div class="square one"></div>
+    <div class="square two"></div>
+    <div class="square three"></div>
+    <div class="square four"></div>
+    <div class="square five"></div>
+</body>
+</html>

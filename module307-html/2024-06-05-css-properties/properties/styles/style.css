@@ -1,0 +1,59 @@
+/* CSS HEX */
+:root {
+    --licorice: #1c0e0dff;
+    --wenge: #63595cff;
+    --paynes-gray: #646881ff;
+    --verdigris: #62bec1ff;
+    --silver: #cebebeff;
+    }
+    
+    
+    /* CSS HSL */
+    /* --licorice: hsla(4, 37%, 8%, 1);
+    --wenge: hsla(342, 5%, 37%, 1);
+    --paynes-gray: hsla(232, 13%, 45%, 1);
+    --verdigris: hsla(182, 43%, 57%, 1);
+    --silver: hsla(0, 14%, 78%, 1);  */
+    
+    body {
+        background-color: #eee;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .inline-example {
+        background-color: lightblue;
+        display: inline;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    .rubik-bubbles-regular {
+        font-family: "Rubik Bubbles", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .protest-revolution-regular {
+        font-family: "Protest Revolution", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .protest-riot-regular {
+        font-family: "Protest Riot", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    
+    .sixtyfour-one {
+        font-family: "Sixtyfour", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+            "BLED" 0,
+            "SCAN" 0;
+    }

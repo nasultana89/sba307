@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    border: 3px darkorchid dashed;
+    padding: 5px;
+    margin: 10px;
+    justify-content: space-around;
+    /* demonstrate align-items:  */
+    /* height: 150px; */
+    /* align-items: center; */
+    /* align-items: stretch; */
+    /* overridden by setting height */
+
+    /* demonstrate flex-wrap */
+    flex-wrap: wrap;
+}
+
+.container-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 3px rgb(29, 8, 39) dashed;
+    padding: 5px;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+/* .left-container, .right-container {
+    border: 1px lightblue dotted;
+    padding: 2px;
+    display: flex;
+    justify-content: space-around;
+} */
+
+
+.boxes {
+    border: 1px solid;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#box1 {
+    background-color: hsl(0, 70%, 70%);
+    /* margin-left: auto; */
+}
+
+#box2 {
+    background-color: hsl(36, 70%, 70%);
+}
+
+#box3 {
+    background-color: hsl(72, 70%, 70%);
+    /* margin-left:auto; */
+    order: 1;
+    flex-grow: 2;
+}
+
+#box4 {
+    background-color: hsl(108, 70%, 70%);
+    order: 3;
+    flex-grow: 2;
+}
+
+#box5 {
+    background-color: hsl(144, 70%, 70%);
+    order: -1;
+    flex-grow: 3;
+}
+
+#box6 {
+    background-color: hsl(180, 70%, 70%);
+}
+
+#box7 {
+    background-color: hsl(216, 70%, 70%);
+}
+
+#box8 {
+    background-color: hsl(252, 70%, 70%)
+}
+
+#box9 {
+    background-color: hsl(288, 70%, 70%)
+}
+
+#box10 {
+    background-color: hsl(324, 70%, 70%);
+}

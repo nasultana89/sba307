@@ -1,0 +1,42 @@
+body {
+    background-color: antiquewhite;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #555;
+}
+
+li {
+    float: left;
+    border-right: solid 5px #bbb;
+}
+
+li:last-child {
+    border-right:none;
+}
+
+li a {
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+/* This is an example of how I would group things together in css */
+#about {
+    background-color: rgb(224, 178, 218);
+}
+

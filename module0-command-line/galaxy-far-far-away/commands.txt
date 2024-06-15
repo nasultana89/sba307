@@ -1,0 +1,10 @@
+pwd present working dir
+cd change directory
+rm remove/delete 
+rmdir remove directory
+ls list
+cp copy
+mv move
+cd ../ previous directory
+mkdir make directory
+div.box*8 shortcut

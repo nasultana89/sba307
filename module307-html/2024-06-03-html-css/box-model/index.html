@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Box Model</title>
+</head>
+<body>
+<!-- There are many property-specific units for values used in CSS, but there are some general units that are used by a number of properties, and it is worth familiarizing yourself with these before continuing.
+px (such as font-size: 12px) is the unit for pixels.
+em (such as font-size: 2em) is the unit for the calculated size of a font. So "2em," for example, is two times the current font size.
+pt (such as font-size: 12pt) is the unit for points, a measurement typically used in printed media.
+% (such as width: 80%) is the unit for percentage widths of the parent element.
+vw (such as 1vw) is equal to 1% of the viewport width. Viewport denotes browser window size.
+vh (such as 1vh) is equal to 1% of the viewport height.
+vmin (such as 1vmin) is equal to 1% of smaller length of vw or vh.
+vmax (such as 1vmax) is equal to 1% of larger length of vw or vh. -->
+<!-- This was showing the box model -->
+
+<!-- 
+    The three types of styling that you need to know are:  
+        1. external (external css file that we imported)
+        2. internal (in a style tag)
+        3. inline (in the tag for the element)
+-->
+
+
+    <!-- <p>One</p>
+    <p>Two</p> -->
+    <h1> This is a heading</h1>
+    <h2> This is a smaller heading </h2>
+    <h3> This is even smaller</h3>
+
+    <p  id="intro">This is a paragraph</p>
+    <!-- this is an example of inline styling -->
+    <h1 style="color: red; background-color: white;"> This is a super important heading</h1>
+    <p> This is a paragraph
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ex voluptatibus iste dolorum quasi, voluptate aliquid neque ipsa harum, nam veritatis vitae dicta cum? Facilis amet nobis quasi voluptatem architecto?
+    </p>
+    <h1> This is a heading </h1>
+    <p class="colorful"> This is a paragraph</p>
+    <h1> This is a heading </h1>
+    <p class="colorful"> This is a paragraph</p>
+
+    <section>
+        <h1> CSS Styles </h1>
+        <p> p tag before the h2 </p>
+        <h2> Different ways to apply CSS styles </h2>
+        <p> 1) Inline styles </p>
+        <div> This breaks up the p tags </div>
+        <p> 2) Internal Style Sheet </p>
+        <p> 3) External Style Sheet </p>
+        <div>
+            <p> This is not a child of the section, but it is a descendent. </p>
+        </div>
+    </section>
+
+</body>
+</html>
